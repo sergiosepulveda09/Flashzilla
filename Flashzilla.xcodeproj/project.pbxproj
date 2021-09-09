@@ -14,6 +14,7 @@
 		806B232526E9168400075C89 /* HowToUseGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232426E9168400075C89 /* HowToUseGestures.swift */; };
 		806B232726E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232626E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift */; };
 		806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232826E9285700075C89 /* DisablingUserInteractivity.swift */; };
+		806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		806B232426E9168400075C89 /* HowToUseGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseGestures.swift; sourceTree = "<group>"; };
 		806B232626E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift; sourceTree = "<group>"; };
 		806B232826E9285700075C89 /* DisablingUserInteractivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisablingUserInteractivity.swift; sourceTree = "<group>"; };
+		806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggeringEventsRepeadtlyUsingATimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				806B232426E9168400075C89 /* HowToUseGestures.swift */,
 				806B232626E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift */,
 				806B232826E9285700075C89 /* DisablingUserInteractivity.swift */,
+				806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				806B232526E9168400075C89 /* HowToUseGestures.swift in Sources */,
 				806B231726E7CDDD00075C89 /* ContentView.swift in Sources */,
+				806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */,
 				806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */,
 				806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */,
 				806B232726E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift in Sources */,
