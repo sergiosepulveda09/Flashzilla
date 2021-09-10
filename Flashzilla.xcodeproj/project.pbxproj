@@ -16,6 +16,7 @@
 		806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232826E9285700075C89 /* DisablingUserInteractivity.swift */; };
 		806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */; };
 		806B232D26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232C26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift */; };
+		806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		806B232826E9285700075C89 /* DisablingUserInteractivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisablingUserInteractivity.swift; sourceTree = "<group>"; };
 		806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggeringEventsRepeadtlyUsingATimer.swift; sourceTree = "<group>"; };
 		806B232C26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToBeNotifiedWhenYourAppMovesToBackground.swift; sourceTree = "<group>"; };
+		806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingSpecificAccessibilityNeeds.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				806B232826E9285700075C89 /* DisablingUserInteractivity.swift */,
 				806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */,
 				806B232C26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift */,
+				806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */,
 			);
 			path = Theory;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */,
 				806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */,
 				806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */,
+				806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */,
 				806B232D26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift in Sources */,
 				806B232726E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift in Sources */,
 			);
