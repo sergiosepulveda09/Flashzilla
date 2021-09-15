@@ -17,6 +17,8 @@
 		806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */; };
 		806B232D26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232C26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift */; };
 		806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */; };
+		806B233126F252E400075C89 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233026F252E400075C89 /* Card.swift */; };
+		806B233326F2533700075C89 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233226F2533700075C89 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		806B232A26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriggeringEventsRepeadtlyUsingATimer.swift; sourceTree = "<group>"; };
 		806B232C26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToBeNotifiedWhenYourAppMovesToBackground.swift; sourceTree = "<group>"; };
 		806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingSpecificAccessibilityNeeds.swift; sourceTree = "<group>"; };
+		806B233026F252E400075C89 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		806B233226F2533700075C89 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +70,12 @@
 			children = (
 				806B232326E9167100075C89 /* Theory */,
 				806B231426E7CDDD00075C89 /* FlashzillaApp.swift */,
+				806B233026F252E400075C89 /* Card.swift */,
 				806B231626E7CDDD00075C89 /* ContentView.swift */,
 				806B231826E7CDDE00075C89 /* Assets.xcassets */,
 				806B231D26E7CDDE00075C89 /* Info.plist */,
 				806B231A26E7CDDE00075C89 /* Preview Content */,
+				806B233226F2533700075C89 /* CardView.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
@@ -165,8 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				806B232526E9168400075C89 /* HowToUseGestures.swift in Sources */,
+				806B233126F252E400075C89 /* Card.swift in Sources */,
 				806B231726E7CDDD00075C89 /* ContentView.swift in Sources */,
 				806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */,
+				806B233326F2533700075C89 /* CardView.swift in Sources */,
 				806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */,
 				806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */,
 				806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */,
