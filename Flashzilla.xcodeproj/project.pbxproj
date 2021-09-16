@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B231426E7CDDD00075C89 /* FlashzillaApp.swift */; };
 		806B231726E7CDDD00075C89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B231626E7CDDD00075C89 /* ContentView.swift */; };
-		806B231926E7CDDE00075C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806B231826E7CDDE00075C89 /* Assets.xcassets */; };
 		806B231C26E7CDDE00075C89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806B231B26E7CDDE00075C89 /* Preview Assets.xcassets */; };
 		806B232526E9168400075C89 /* HowToUseGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232426E9168400075C89 /* HowToUseGestures.swift */; };
 		806B232726E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232626E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift */; };
@@ -19,13 +18,13 @@
 		806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */; };
 		806B233126F252E400075C89 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233026F252E400075C89 /* Card.swift */; };
 		806B233326F2533700075C89 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233226F2533700075C89 /* CardView.swift */; };
+		806B233926F2F1F100075C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806B233826F2F1F100075C89 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		806B231126E7CDDD00075C89 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806B231426E7CDDD00075C89 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
 		806B231626E7CDDD00075C89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		806B231826E7CDDE00075C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		806B231B26E7CDDE00075C89 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		806B231D26E7CDDE00075C89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		806B232426E9168400075C89 /* HowToUseGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseGestures.swift; sourceTree = "<group>"; };
@@ -36,6 +35,7 @@
 		806B232E26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportingSpecificAccessibilityNeeds.swift; sourceTree = "<group>"; };
 		806B233026F252E400075C89 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		806B233226F2533700075C89 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		806B233826F2F1F100075C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 				806B231426E7CDDD00075C89 /* FlashzillaApp.swift */,
 				806B233026F252E400075C89 /* Card.swift */,
 				806B231626E7CDDD00075C89 /* ContentView.swift */,
-				806B231826E7CDDE00075C89 /* Assets.xcassets */,
+				806B233826F2F1F100075C89 /* Assets.xcassets */,
 				806B231D26E7CDDE00075C89 /* Info.plist */,
 				806B231A26E7CDDE00075C89 /* Preview Content */,
 				806B233226F2533700075C89 /* CardView.swift */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				806B231C26E7CDDE00075C89 /* Preview Assets.xcassets in Resources */,
-				806B231926E7CDDE00075C89 /* Assets.xcassets in Resources */,
+				806B233926F2F1F100075C89 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
