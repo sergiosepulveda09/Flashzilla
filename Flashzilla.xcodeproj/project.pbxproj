@@ -72,10 +72,10 @@
 				806B231426E7CDDD00075C89 /* FlashzillaApp.swift */,
 				806B233026F252E400075C89 /* Card.swift */,
 				806B231626E7CDDD00075C89 /* ContentView.swift */,
+				806B233226F2533700075C89 /* CardView.swift */,
 				806B233826F2F1F100075C89 /* Assets.xcassets */,
 				806B231D26E7CDDE00075C89 /* Info.plist */,
 				806B231A26E7CDDE00075C89 /* Preview Content */,
-				806B233226F2533700075C89 /* CardView.swift */,
 			);
 			path = Flashzilla;
 			sourceTree = "<group>";
