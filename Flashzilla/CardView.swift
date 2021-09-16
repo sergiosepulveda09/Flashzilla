@@ -15,6 +15,7 @@ struct CardView: View {
     let card: Card
     var removal: (() -> Void)? = nil
     @State private var feedback = UINotificationFeedbackGenerator()
+    @Environment(\.accessibilityEnabled) var accessibilityEnabled
     
     
     var body: some View {
@@ -28,23 +29,31 @@ struct CardView: View {
                 .shadow(radius: 10)
             
             VStack {
-                Text(card.prompt)
-                    .font(.largeTitle)
-                    .foregroundColor(Color.black)
-                
-                if isShowingAnswer {
-                    Text(card.answer)
-                        .font(.title)
-                        .foregroundColor(.gray)
+                if accessibilityEnabled {
+                    Text(isShowingAnswer ? card.answer : card.prompt)
+                        .font(.largeTitle)
+                        .foregroundColor(Color.black)
+                } else {
+                    Text(card.prompt)
+                        .font(.largeTitle)
+                        .foregroundColor(Color.black)
+    
+                    if isShowingAnswer {
+                        Text(card.answer)
+                            .font(.title)
+                            .foregroundColor(.gray)
+                    }
                 }
+                
             }
-                .padding()
+            .padding()
             .multilineTextAlignment(.center)
         }
         .frame(width: 450, height: 250)
         .rotationEffect(.degrees(Double(offset.width / 5)))
         .offset(x: offset.width * 5 , y: 0)
         .opacity(2 - Double(abs(offset.width / 50)))
+        .accessibility(addTraits: .isButton)
         .gesture(
         
             DragGesture()
@@ -70,6 +79,7 @@ struct CardView: View {
         .onTapGesture {
             self.isShowingAnswer.toggle()
         }
+        .animation(.spring())
     }
 }
 
