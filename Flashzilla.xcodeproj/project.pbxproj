@@ -19,6 +19,7 @@
 		806B233126F252E400075C89 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233026F252E400075C89 /* Card.swift */; };
 		806B233326F2533700075C89 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233226F2533700075C89 /* CardView.swift */; };
 		806B233926F2F1F100075C89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806B233826F2F1F100075C89 /* Assets.xcassets */; };
+		806B233B26F3D78800075C89 /* EditCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B233A26F3D78800075C89 /* EditCards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		806B233026F252E400075C89 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		806B233226F2533700075C89 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		806B233826F2F1F100075C89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		806B233A26F3D78800075C89 /* EditCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				806B231426E7CDDD00075C89 /* FlashzillaApp.swift */,
 				806B233026F252E400075C89 /* Card.swift */,
 				806B231626E7CDDD00075C89 /* ContentView.swift */,
+				806B233A26F3D78800075C89 /* EditCards.swift */,
 				806B233226F2533700075C89 /* CardView.swift */,
 				806B233826F2F1F100075C89 /* Assets.xcassets */,
 				806B231D26E7CDDE00075C89 /* Info.plist */,
@@ -174,6 +177,7 @@
 				806B233126F252E400075C89 /* Card.swift in Sources */,
 				806B231726E7CDDD00075C89 /* ContentView.swift in Sources */,
 				806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */,
+				806B233B26F3D78800075C89 /* EditCards.swift in Sources */,
 				806B233326F2533700075C89 /* CardView.swift in Sources */,
 				806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */,
 				806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */,
