@@ -16,6 +16,8 @@ struct ContentView: View {
     @State private var isActive = true
     @Environment(\.accessibilityEnabled) var accessibilityEnabled
     @State private var showingEditScreen = false
+    @State private var timeIsZero = false
+    @State private var feedback = UINotificationFeedbackGenerator()
     
     var body: some View {
         ZStack {
@@ -58,6 +60,7 @@ struct ContentView: View {
                 }
                 
             }
+            
             
             VStack {
                 HStack {
@@ -122,6 +125,10 @@ struct ContentView: View {
             if self.timeRemaining > 0 {
                 self.timeRemaining -= 1
             }
+            else if self.timeRemaining == 0 {
+                self.feedback.notificationOccurred(.warning)
+                self.timeIsZero = true
+            }
         }
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification)) { _ in
             self.isActive = false
@@ -135,6 +142,11 @@ struct ContentView: View {
             EditCards()
         }
         .onAppear(perform: resetCards)
+        .alert(isPresented: $timeIsZero, content: {
+            Alert(title: Text("TIME'S UP!"), message: Text("Tap to start again"), dismissButton: .default(Text("Reset timer.")) {
+                resetCards()
+            })
+        })
     }
     
     func removeCard(at index: Int) {
@@ -150,7 +162,7 @@ struct ContentView: View {
     }
     
     func resetCards() {
-        timeRemaining = 100
+        timeRemaining = 10
         isActive = true
         loadData()
     }

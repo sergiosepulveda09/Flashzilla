@@ -34,9 +34,26 @@ struct EditCards: View {
                     .onDelete(perform: removeCards)
                 }
             }
+            .navigationBarTitle("Edit Cards")
+            .navigationBarItems(trailing: Button("Done", action: dismiss))
+            .listStyle(GroupedListStyle())
+            .onAppear(perform: loadData)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
+    
+    func dismiss() {
+        presentationMode.wrappedValue.dismiss()
+    }
+    
+    func loadData() {
+        if let data = UserDefaults.standard.data(forKey: "Cards") {
+            if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
+                self.cards = decoded
+            }
+        }
+    }
+    
     
     func saveData() {
         if let data = try? JSONEncoder().encode(cards) {
@@ -46,19 +63,20 @@ struct EditCards: View {
     
     func removeCards(at offsets: IndexSet) {
         cards.remove(atOffsets: offsets)
-            saveData()
+        saveData()
     }
     
     func addCard() {
         let trimmedPrompt = newPrompt.trimmingCharacters(in: .whitespaces)
         let trimmedAnswer = newAnswer.trimmingCharacters(in: .whitespaces)
-        guard trimmedPrompt.isEmpty == false && trimmedAnswer.isEmpty == false else {
-            return
-        }
+        guard trimmedPrompt.isEmpty == false && trimmedAnswer.isEmpty == false else { return }
+
         let card = Card(prompt: trimmedPrompt, answer: trimmedAnswer)
         cards.insert(card, at: 0)
         saveData()
     }
+    
+    
 }
 
 struct EditCards_Previews: PreviewProvider {
