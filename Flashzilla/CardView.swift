@@ -16,19 +16,18 @@ struct CardView: View {
     var removal: (() -> Void)? = nil
     @State private var feedback = UINotificationFeedbackGenerator()
     @Environment(\.accessibilityEnabled) var accessibilityEnabled
-    @State private var threshHoldFailed: Bool = false
+    @State private var isWrongAnswer: Bool = false
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 25, style: .continuous)
-                .fill(differentiateWithoutColor ? Color.white : threshHoldFailed ? Color.red.opacity(0.9) : Color.white.opacity(1 - Double(abs(offset.width / 50))))
-//                .background(
-//                    differentiateWithoutColor ? nil : RoundedRectangle(cornerRadius: 25, style: .continuous)
-//                        .fill(offset.width > 0 ? Color.green : Color.red)
-//
-//
-//                )
-                .modifier(backgroundColorTry(differentiateWithoutColor: differentiateWithoutColor, offset: offset, threshHoldFailed: threshHoldFailed))
+                .fill(differentiateWithoutColor ? Color.white : Color.white.opacity(1 - Double(abs(offset.width / 50))))
+                .background(
+                    differentiateWithoutColor ? nil : RoundedRectangle(cornerRadius: 25, style: .continuous)
+                        .fill(offset.width > 0 ? Color.green : Color.red)
+
+
+                )
                 .shadow(radius: 10)
             
             VStack {
@@ -61,7 +60,6 @@ struct CardView: View {
         
             DragGesture()
                 .onChanged { gesture in
-                    self.threshHoldFailed = false
                     self.offset = gesture.translation
                     self.feedback.prepare()
                 }
@@ -76,7 +74,6 @@ struct CardView: View {
                         self.removal?()
                     } else {
                         self.offset = .zero
-                        self.threshHoldFailed = true
                     }
                 }
             
@@ -86,14 +83,7 @@ struct CardView: View {
         }
         .animation(.spring())
     }
-    
-    func returning(eraseFailed: Bool) -> Color? {
-        if eraseFailed == true {
-            return Color.red
-        }
-        return nil
-    }
-    
+        
 }
 
 struct CardView_Previews: PreviewProvider {
@@ -102,19 +92,3 @@ struct CardView_Previews: PreviewProvider {
     }
 }
 
-
-struct backgroundColorTry: ViewModifier {
-    var differentiateWithoutColor: Bool
-    var offset: CGSize
-    var threshHoldFailed: Bool
-    func body(content: Content) -> some View {
-        
-        content
-            .background(
-                differentiateWithoutColor ? nil : RoundedRectangle(cornerRadius: 25, style: .continuous)
-                    .fill(threshHoldFailed ? Color.red : offset.width > 0 ? Color.green : Color.red)
-            )
-                
-
-    }
-}
