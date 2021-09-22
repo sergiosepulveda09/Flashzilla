@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		800E31CF26FB2F5700B61298 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E31CE26FB2F5700B61298 /* BackgroundView.swift */; };
+		800E31D526FB4FDA00B61298 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 800E31D426FB4FDA00B61298 /* SettingsView.swift */; };
 		806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B231426E7CDDD00075C89 /* FlashzillaApp.swift */; };
 		806B231726E7CDDD00075C89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806B231626E7CDDD00075C89 /* ContentView.swift */; };
 		806B231C26E7CDDE00075C89 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 806B231B26E7CDDE00075C89 /* Preview Assets.xcassets */; };
@@ -24,7 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		800E31CE26FB2F5700B61298 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		800E31D426FB4FDA00B61298 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		806B231126E7CDDD00075C89 /* Flashzilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashzilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		806B231426E7CDDD00075C89 /* FlashzillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashzillaApp.swift; sourceTree = "<group>"; };
 		806B231626E7CDDD00075C89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,14 +53,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		800E31CD26FB2EDF00B61298 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				800E31CE26FB2F5700B61298 /* BackgroundView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		806B230826E7CDDD00075C89 = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +73,11 @@
 			isa = PBXGroup;
 			children = (
 				806B232326E9167100075C89 /* Theory */,
-				800E31CD26FB2EDF00B61298 /* Views */,
 				806B231426E7CDDD00075C89 /* FlashzillaApp.swift */,
 				806B231626E7CDDD00075C89 /* ContentView.swift */,
 				806B233026F252E400075C89 /* Card.swift */,
 				806B233A26F3D78800075C89 /* EditCards.swift */,
+				800E31D426FB4FDA00B61298 /* SettingsView.swift */,
 				806B233226F2533700075C89 /* CardView.swift */,
 				806B233826F2F1F100075C89 /* Assets.xcassets */,
 				806B231D26E7CDDE00075C89 /* Info.plist */,
@@ -190,10 +182,10 @@
 				806B232B26EA9ABA00075C89 /* TriggeringEventsRepeadtlyUsingATimer.swift in Sources */,
 				806B233B26F3D78800075C89 /* EditCards.swift in Sources */,
 				806B233326F2533700075C89 /* CardView.swift in Sources */,
-				800E31CF26FB2F5700B61298 /* BackgroundView.swift in Sources */,
 				806B232926E9285700075C89 /* DisablingUserInteractivity.swift in Sources */,
 				806B231526E7CDDD00075C89 /* FlashzillaApp.swift in Sources */,
 				806B232F26EAA96100075C89 /* SupportingSpecificAccessibilityNeeds.swift in Sources */,
+				800E31D526FB4FDA00B61298 /* SettingsView.swift in Sources */,
 				806B232D26EAA20C00075C89 /* HowToBeNotifiedWhenYourAppMovesToBackground.swift in Sources */,
 				806B232726E91B8600075C89 /* MakingVibrationsWithUINotificationFeedbackGeneratorAndCoreHaptics.swift in Sources */,
 			);
