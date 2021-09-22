@@ -9,10 +9,10 @@ import SwiftUI
 
 struct EditCards: View {
     @Environment(\.presentationMode) var presentationMode
-    @State private var cards: [Card] = [Card]()
-    @State private var newPrompt: String = ""
-    @State private var newAnswer: String = ""
-    
+    @State private var cards = [Card]()
+    @State private var newPrompt = ""
+    @State private var newAnswer = ""
+
     var body: some View {
         NavigationView {
             List {
@@ -21,7 +21,7 @@ struct EditCards: View {
                     TextField("Answer", text: $newAnswer)
                     Button("Add card", action: addCard)
                 }
-                
+
                 Section {
                     ForEach(0..<cards.count, id: \.self) { index in
                         VStack(alignment: .leading) {
@@ -41,11 +41,11 @@ struct EditCards: View {
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }
-    
+
     func dismiss() {
         presentationMode.wrappedValue.dismiss()
     }
-    
+
     func loadData() {
         if let data = UserDefaults.standard.data(forKey: "Cards") {
             if let decoded = try? JSONDecoder().decode([Card].self, from: data) {
@@ -53,19 +53,13 @@ struct EditCards: View {
             }
         }
     }
-    
-    
+
     func saveData() {
         if let data = try? JSONEncoder().encode(cards) {
             UserDefaults.standard.set(data, forKey: "Cards")
         }
     }
-    
-    func removeCards(at offsets: IndexSet) {
-        cards.remove(atOffsets: offsets)
-        saveData()
-    }
-    
+
     func addCard() {
         let trimmedPrompt = newPrompt.trimmingCharacters(in: .whitespaces)
         let trimmedAnswer = newAnswer.trimmingCharacters(in: .whitespaces)
@@ -75,8 +69,11 @@ struct EditCards: View {
         cards.insert(card, at: 0)
         saveData()
     }
-    
-    
+
+    func removeCards(at offsets: IndexSet) {
+        cards.remove(atOffsets: offsets)
+        saveData()
+    }
 }
 
 struct EditCards_Previews: PreviewProvider {
